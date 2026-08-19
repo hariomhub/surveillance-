@@ -1,0 +1,6 @@
+{
+  "name": "Sentinel AI Surveillance",
+  "description": "Enterprise AI surveillance and security intelligence dashboard with live alert feeds, entity investigation timeline, camera fleet telemetry, visual rule builder, and known relationships registry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
