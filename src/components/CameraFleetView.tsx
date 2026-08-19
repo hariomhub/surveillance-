@@ -36,7 +36,7 @@ export const CameraFleetView: React.FC<CameraFleetViewProps> = ({
   });
 
   return (
-    <main className="md:ml-64 pt-16 p-margin-page flex-1 overflow-y-auto overscroll-contain bg-background flex flex-col gap-6">
+    <main className="md:ml-64 pt-16 p-margin-page flex-1 min-h-0 overflow-y-auto overscroll-contain bg-background flex flex-col gap-6">
       {/* Header & Filters */}
       <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-outline-variant pb-4 gap-4">
         <div>

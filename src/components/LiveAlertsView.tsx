@@ -61,7 +61,7 @@ export const LiveAlertsView: React.FC<LiveAlertsViewProps> = ({
   };
 
   return (
-    <main className="mt-16 p-margin-page flex-1 overflow-y-auto overscroll-contain flex flex-col gap-gutter bg-background">
+    <main className="mt-16 p-margin-page flex-1 min-h-0 overflow-y-auto overscroll-contain flex flex-col gap-gutter bg-background">
       {/* Page Title & Status Indicator */}
       <div className="flex items-center justify-between mb-2">
         <h2 className="font-headline-md text-headline-md text-on-surface">Live Alerts Dashboard</h2>

@@ -183,7 +183,7 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col min-w-0">
+      <div className="flex-1 flex flex-col min-w-0 min-h-0">
         {/* Top Header */}
         <TopHeader
           currentTab={currentTab}
@@ -197,7 +197,7 @@ export default function App() {
 
         {/* View Switching */}
         {currentTab === 'alerts' && (
-          <div className="md:ml-64 flex-1 flex flex-col min-w-0">
+          <div className="md:ml-64 flex-1 flex flex-col min-w-0 min-h-0">
             <LiveAlertsView
               alerts={alerts}
               searchQuery={searchQuery}

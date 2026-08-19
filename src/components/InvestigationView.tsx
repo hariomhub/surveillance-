@@ -28,7 +28,7 @@ export const InvestigationView: React.FC<InvestigationViewProps> = ({
   };
 
   return (
-    <main className="md:ml-64 mt-16 p-margin-page flex-1 overflow-y-auto overscroll-contain lg:overflow-hidden bg-background flex flex-col lg:flex-row gap-gutter lg:h-[calc(100vh-4rem)]">
+    <main className="md:ml-64 mt-16 p-margin-page flex-1 min-h-0 overflow-y-auto overscroll-contain lg:overflow-hidden bg-background flex flex-col lg:flex-row gap-gutter lg:h-[calc(100vh-4rem)]">
       {/* Toast notification banner */}
       {actionFeedback && (
         <div className="fixed top-20 right-4 left-4 sm:left-auto sm:right-8 z-50 bg-surface-container border border-primary text-on-surface px-4 py-3 rounded shadow-2xl flex items-center gap-3 animate-fade-in">

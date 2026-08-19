@@ -86,7 +86,7 @@ export const RuleBuilderView: React.FC<RuleBuilderViewProps> = ({
   );
 
   return (
-    <main className="md:ml-64 pt-16 flex-1 lg:h-screen overflow-y-auto overscroll-contain lg:overflow-hidden flex flex-col lg:flex-row bg-background relative">
+    <main className="md:ml-64 pt-16 flex-1 min-h-0 lg:h-screen overflow-y-auto overscroll-contain lg:overflow-hidden flex flex-col lg:flex-row bg-background relative">
       {/* Toast Alert */}
       {toastMessage && (
         <div className="fixed lg:absolute top-20 right-4 left-4 sm:left-auto sm:right-8 z-50 bg-surface-container border border-primary text-on-surface px-4 py-3 rounded shadow-2xl flex items-center gap-3 animate-fade-in">
