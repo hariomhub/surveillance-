@@ -52,7 +52,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
         <button
           id="btn-open-mobile-nav"
           onClick={onOpenMobileNav}
-          className="md:hidden text-on-surface-variant hover:text-on-surface p-1.5 -ml-1.5 rounded hover:bg-surface-container-high transition-colors cursor-pointer shrink-0"
+          className="md:hidden text-on-surface-variant hover:text-on-surface p-1.5 -ml-1.5 rounded hover:bg-surface-container-high active:bg-surface-container-high transition-all active:scale-90 cursor-pointer shrink-0"
           title="Open menu"
         >
           <span className="material-symbols-outlined text-[22px]">menu</span>
@@ -107,7 +107,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
               setShowNotifications(!showNotifications);
               setShowProfileMenu(false);
             }}
-            className="text-on-surface-variant hover:text-on-surface p-1.5 rounded hover:bg-surface-container-high transition-colors relative cursor-pointer"
+            className="text-on-surface-variant hover:text-on-surface p-1.5 rounded hover:bg-surface-container-high active:bg-surface-container-high transition-all active:scale-90 relative cursor-pointer"
             title="Alert Notifications"
           >
             <span className="material-symbols-outlined text-[22px]">notifications</span>
@@ -136,7 +136,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                       onSelectAlert(alert);
                       setShowNotifications(false);
                     }}
-                    className="p-3 hover:bg-surface-variant transition-colors cursor-pointer flex items-start gap-3"
+                    className="p-3 hover:bg-surface-variant active:bg-surface-variant transition-colors cursor-pointer flex items-start gap-3"
                   >
                     <div
                       className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${
@@ -171,7 +171,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
         <button
           id="btn-top-settings-suggest"
           onClick={onOpenSettings}
-          className="text-on-surface-variant hover:text-on-surface p-1.5 rounded hover:bg-surface-container-high transition-colors cursor-pointer"
+          className="text-on-surface-variant hover:text-on-surface p-1.5 rounded hover:bg-surface-container-high active:bg-surface-container-high transition-all active:scale-90 cursor-pointer"
           title="System Engine & Thresholds"
         >
           <span className="material-symbols-outlined text-[22px]">settings_suggest</span>
@@ -185,7 +185,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
               setShowProfileMenu(!showProfileMenu);
               setShowNotifications(false);
             }}
-            className="w-8 h-8 rounded-full border border-outline-variant overflow-hidden cursor-pointer hover:border-primary transition-colors flex items-center justify-center bg-surface-container-high"
+            className="w-8 h-8 rounded-full border border-outline-variant overflow-hidden cursor-pointer hover:border-primary active:border-primary transition-all active:scale-90 flex items-center justify-center bg-surface-container-high"
             title="Administrator Profile"
           >
             <img

@@ -179,7 +179,7 @@ export const NewRuleModal: React.FC<NewRuleModalProps> = ({ onClose, onAddRule }
             </button>
             <button
               type="submit"
-              className="px-4 py-1.5 rounded bg-primary text-on-primary font-bold hover:bg-primary-fixed transition-colors shadow-sm"
+              className="px-4 py-1.5 rounded bg-primary text-on-primary font-bold hover:bg-primary-fixed active:bg-primary-fixed transition-all active:scale-[0.97] cursor-pointer shadow-sm"
             >
               Deploy Rule
             </button>

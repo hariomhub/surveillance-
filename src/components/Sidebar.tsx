@@ -55,7 +55,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </div>
         <button
           onClick={onClose}
-          className="md:hidden text-on-surface-variant hover:text-on-surface p-1 rounded hover:bg-surface-container-high transition-colors cursor-pointer"
+          className="md:hidden text-on-surface-variant hover:text-on-surface p-1 rounded hover:bg-surface-container-high transition-all active:scale-[0.98] cursor-pointer"
           title="Close menu"
         >
           <span className="material-symbols-outlined text-[20px]">close</span>
@@ -68,7 +68,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <button
           id="nav-tab-live-alerts"
           onClick={() => onSelectTab('alerts')}
-          className={`w-full flex items-center justify-between px-3 py-2 rounded text-left transition-colors cursor-pointer ${
+          className={`w-full flex items-center justify-between px-3 py-2 rounded text-left transition-all active:scale-[0.98] cursor-pointer ${
             currentTab === 'alerts'
               ? 'text-primary bg-secondary-container font-semibold'
               : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface'
@@ -95,7 +95,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <button
           id="nav-tab-camera-fleet"
           onClick={() => onSelectTab('fleet')}
-          className={`w-full flex items-center gap-3 px-3 py-2 rounded text-left transition-colors cursor-pointer ${
+          className={`w-full flex items-center gap-3 px-3 py-2 rounded text-left transition-all active:scale-[0.98] cursor-pointer ${
             currentTab === 'fleet'
               ? 'text-primary bg-secondary-container font-semibold'
               : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface'
@@ -115,7 +115,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <button
           id="nav-tab-investigation"
           onClick={() => onSelectTab('investigation')}
-          className={`w-full flex items-center justify-between px-3 py-2 rounded text-left transition-colors cursor-pointer ${
+          className={`w-full flex items-center justify-between px-3 py-2 rounded text-left transition-all active:scale-[0.98] cursor-pointer ${
             currentTab === 'investigation'
               ? 'text-primary bg-secondary-container font-semibold'
               : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface'
@@ -140,7 +140,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <button
           id="nav-tab-rule-builder"
           onClick={() => onSelectTab('rules')}
-          className={`w-full flex items-center gap-3 px-3 py-2 rounded text-left transition-colors cursor-pointer ${
+          className={`w-full flex items-center gap-3 px-3 py-2 rounded text-left transition-all active:scale-[0.98] cursor-pointer ${
             currentTab === 'rules'
               ? 'text-primary bg-secondary-container font-semibold'
               : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface'
@@ -160,7 +160,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <button
           id="nav-tab-relationships"
           onClick={() => onSelectTab('relationships')}
-          className={`w-full flex items-center gap-3 px-3 py-2 rounded text-left transition-colors cursor-pointer ${
+          className={`w-full flex items-center gap-3 px-3 py-2 rounded text-left transition-all active:scale-[0.98] cursor-pointer ${
             currentTab === 'relationships'
               ? 'text-primary bg-secondary-container font-semibold'
               : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface'
@@ -194,7 +194,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <button
           id="btn-sidebar-settings"
           onClick={onOpenSettings}
-          className="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer text-left"
+          className="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all active:scale-[0.98] cursor-pointer text-left"
         >
           <span className="material-symbols-outlined text-[20px]">settings</span>
           <span className="font-body-md text-[14px]">Settings</span>
@@ -202,7 +202,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <button
           id="btn-sidebar-support"
           onClick={onOpenSupport}
-          className="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer text-left"
+          className="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all active:scale-[0.98] cursor-pointer text-left"
         >
           <span className="material-symbols-outlined text-[20px]">help_outline</span>
           <span className="font-body-md text-[14px]">Support</span>

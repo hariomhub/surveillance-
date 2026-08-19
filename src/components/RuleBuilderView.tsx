@@ -86,7 +86,7 @@ export const RuleBuilderView: React.FC<RuleBuilderViewProps> = ({
   );
 
   return (
-    <main className="md:ml-64 pt-16 flex-1 lg:h-screen overflow-y-auto lg:overflow-hidden flex flex-col lg:flex-row bg-background relative">
+    <main className="md:ml-64 pt-16 flex-1 lg:h-screen overflow-y-auto overscroll-contain lg:overflow-hidden flex flex-col lg:flex-row bg-background relative">
       {/* Toast Alert */}
       {toastMessage && (
         <div className="fixed lg:absolute top-20 right-4 left-4 sm:left-auto sm:right-8 z-50 bg-surface-container border border-primary text-on-surface px-4 py-3 rounded shadow-2xl flex items-center gap-3 animate-fade-in">
@@ -137,10 +137,10 @@ export const RuleBuilderView: React.FC<RuleBuilderViewProps> = ({
               <div
                 key={rule.id}
                 onClick={() => handleSelectRule(rule)}
-                className={`p-3 rounded border transition-colors cursor-pointer relative overflow-hidden group ${
+                className={`p-3 rounded border transition-all active:scale-[0.99] cursor-pointer relative overflow-hidden group ${
                   isSelected
                     ? 'border-primary bg-surface-container-high'
-                    : 'border-outline-variant bg-surface-container hover:bg-surface-variant'
+                    : 'border-outline-variant bg-surface-container hover:bg-surface-variant active:bg-surface-variant'
                 } ${!rule.isActive ? 'opacity-70' : ''}`}
               >
                 {isSelected && (
@@ -242,7 +242,7 @@ export const RuleBuilderView: React.FC<RuleBuilderViewProps> = ({
             <button
               id="btn-save-rule-draft"
               onClick={handleSave}
-              className="px-3 py-1.5 rounded border border-primary bg-primary text-on-primary font-body-sm text-body-sm font-medium hover:bg-primary-fixed transition-colors cursor-pointer shadow-sm"
+              className="px-3 py-1.5 rounded border border-primary bg-primary text-on-primary font-body-sm text-body-sm font-medium hover:bg-primary-fixed active:bg-primary-fixed transition-all active:scale-[0.97] cursor-pointer shadow-sm"
             >
               Save Rule
             </button>

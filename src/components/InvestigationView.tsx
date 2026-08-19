@@ -28,7 +28,7 @@ export const InvestigationView: React.FC<InvestigationViewProps> = ({
   };
 
   return (
-    <main className="md:ml-64 mt-16 p-margin-page flex-1 overflow-y-auto lg:overflow-hidden bg-background flex flex-col lg:flex-row gap-gutter lg:h-[calc(100vh-4rem)]">
+    <main className="md:ml-64 mt-16 p-margin-page flex-1 overflow-y-auto overscroll-contain lg:overflow-hidden bg-background flex flex-col lg:flex-row gap-gutter lg:h-[calc(100vh-4rem)]">
       {/* Toast notification banner */}
       {actionFeedback && (
         <div className="fixed top-20 right-4 left-4 sm:left-auto sm:right-8 z-50 bg-surface-container border border-primary text-on-surface px-4 py-3 rounded shadow-2xl flex items-center gap-3 animate-fade-in">
@@ -289,7 +289,7 @@ export const InvestigationView: React.FC<InvestigationViewProps> = ({
               onDismiss();
               showToast('Investigation dismissed and archived to historical audit logs.');
             }}
-            className="px-4 py-2 border border-outline-variant rounded text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors cursor-pointer"
+            className="px-4 py-2 border border-outline-variant rounded text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high active:bg-surface-container-high transition-all active:scale-[0.97] cursor-pointer"
           >
             Dismiss
           </button>
@@ -299,7 +299,7 @@ export const InvestigationView: React.FC<InvestigationViewProps> = ({
               onMarkKnownRelationship();
               showToast('Pairing tagged: Person A + Vehicle 1 added to pending registry review.');
             }}
-            className="px-4 py-2 border border-outline-variant rounded text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high transition-colors cursor-pointer"
+            className="px-4 py-2 border border-outline-variant rounded text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high active:bg-surface-container-high transition-all active:scale-[0.97] cursor-pointer"
           >
             Mark as Known Relationship
           </button>
@@ -309,7 +309,7 @@ export const InvestigationView: React.FC<InvestigationViewProps> = ({
               onEscalate();
               showToast('🚨 Escalate to Security triggered! On-site SecOps dispatch notified.');
             }}
-            className="px-4 py-2 bg-primary text-on-primary rounded font-body-sm text-body-sm font-bold hover:bg-primary-container transition-colors shadow-sm cursor-pointer flex items-center justify-center gap-2"
+            className="px-4 py-2 bg-primary text-on-primary rounded font-body-sm text-body-sm font-bold hover:bg-primary-container active:bg-primary-container transition-all active:scale-[0.97] shadow-sm cursor-pointer flex items-center justify-center gap-2"
           >
             <span className="material-symbols-outlined text-[18px]">shield</span>
             Escalate to Security

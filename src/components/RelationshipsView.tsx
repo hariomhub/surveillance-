@@ -115,7 +115,7 @@ export const RelationshipsView: React.FC<RelationshipsViewProps> = ({
   };
 
   return (
-    <main className="md:ml-64 mt-16 p-margin-page flex-1 flex flex-col lg:flex-row overflow-y-auto lg:h-[calc(100vh-64px)] lg:overflow-hidden gap-margin-page bg-[#0F172A] relative">
+    <main className="md:ml-64 mt-16 p-margin-page flex-1 flex flex-col lg:flex-row overflow-y-auto overscroll-contain lg:h-[calc(100vh-64px)] lg:overflow-hidden gap-margin-page bg-[#0F172A] relative">
       {/* Toast */}
       {toastMessage && (
         <div className="fixed lg:absolute top-4 right-4 left-4 sm:left-auto sm:right-8 z-50 bg-surface-container border border-primary text-on-surface px-4 py-3 rounded shadow-2xl flex items-center gap-3 animate-fade-in">
@@ -494,7 +494,7 @@ export const RelationshipsView: React.FC<RelationshipsViewProps> = ({
             id="btn-pairing-save"
             type="button"
             onClick={handleSavePairing}
-            className="px-4 py-2 rounded bg-primary text-on-primary font-body-sm font-medium hover:bg-primary-fixed transition-colors cursor-pointer shadow-sm"
+            className="px-4 py-2 rounded bg-primary text-on-primary font-body-sm font-medium hover:bg-primary-fixed active:bg-primary-fixed transition-all active:scale-[0.97] cursor-pointer shadow-sm"
           >
             Save Pairing
           </button>

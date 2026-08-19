@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --color-surface: #10131a;
   --color-surface-dim: #10131a;

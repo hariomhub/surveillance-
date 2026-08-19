@@ -71,7 +71,7 @@ export const SupportModal: React.FC<SupportModalProps> = ({ onClose }) => {
         <div className="flex justify-end pt-3 border-t border-outline-variant">
           <button
             onClick={onClose}
-            className="px-4 py-1.5 rounded bg-primary text-on-primary font-bold hover:bg-primary-fixed transition-colors"
+            className="px-4 py-1.5 rounded bg-primary text-on-primary font-bold hover:bg-primary-fixed active:bg-primary-fixed transition-all active:scale-[0.97] cursor-pointer"
           >
             Got it
           </button>

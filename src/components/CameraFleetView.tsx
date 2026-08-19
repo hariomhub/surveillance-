@@ -36,7 +36,7 @@ export const CameraFleetView: React.FC<CameraFleetViewProps> = ({
   });
 
   return (
-    <main className="md:ml-64 pt-16 p-margin-page flex-1 overflow-y-auto bg-background flex flex-col gap-6">
+    <main className="md:ml-64 pt-16 p-margin-page flex-1 overflow-y-auto overscroll-contain bg-background flex flex-col gap-6">
       {/* Header & Filters */}
       <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-outline-variant pb-4 gap-4">
         <div>
@@ -156,7 +156,7 @@ export const CameraFleetView: React.FC<CameraFleetViewProps> = ({
                 key={cam.id}
                 id={`camera-node-${cam.code.toLowerCase()}`}
                 onClick={() => onOpenLiveFeed(cam)}
-                className={`bg-[#1E293B] tech-border rounded p-4 flex flex-col gap-4 cursor-pointer transition-all hover:scale-[1.01] hover:border-primary group relative ${
+                className={`bg-[#1E293B] tech-border rounded p-4 flex flex-col gap-4 cursor-pointer transition-all hover:scale-[1.01] active:scale-[0.99] hover:border-primary group relative ${
                   isOffline ? 'border-[#fca5a5] shadow-[0_0_8px_rgba(252,165,165,0.15)]' : ''
                 }`}
               >

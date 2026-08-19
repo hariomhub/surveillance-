@@ -156,7 +156,7 @@ export default function App() {
   const openAlertsCount = alerts.filter((a) => a.status === 'NEW').length;
 
   return (
-    <div className="flex min-h-screen bg-background text-on-surface">
+    <div className="flex h-screen overflow-hidden bg-background text-on-surface">
       {/* Sidebar Navigation */}
       <Sidebar
         currentTab={currentTab}

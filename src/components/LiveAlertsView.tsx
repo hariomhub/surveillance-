@@ -61,7 +61,7 @@ export const LiveAlertsView: React.FC<LiveAlertsViewProps> = ({
   };
 
   return (
-    <main className="mt-16 p-margin-page flex-1 overflow-y-auto flex flex-col gap-gutter bg-background">
+    <main className="mt-16 p-margin-page flex-1 overflow-y-auto overscroll-contain flex flex-col gap-gutter bg-background">
       {/* Page Title & Status Indicator */}
       <div className="flex items-center justify-between mb-2">
         <h2 className="font-headline-md text-headline-md text-on-surface">Live Alerts Dashboard</h2>
@@ -91,7 +91,7 @@ export const LiveAlertsView: React.FC<LiveAlertsViewProps> = ({
         {/* KPI 2: Open Alerts (Red outline with glow overlay) */}
         <div
           id="kpi-open-alerts"
-          className="bg-surface-container border border-error rounded p-3 flex flex-col justify-between h-24 relative overflow-hidden cursor-pointer hover:border-error/80 transition-colors"
+          className="bg-surface-container border border-error rounded p-3 flex flex-col justify-between h-24 relative overflow-hidden cursor-pointer hover:border-error/80 active:border-error/80 active:scale-[0.99] transition-all"
           onClick={() => {
             setStatusFilter(statusFilter === 'NEW' ? 'all' : 'NEW');
           }}
@@ -125,7 +125,7 @@ export const LiveAlertsView: React.FC<LiveAlertsViewProps> = ({
         <div
           id="kpi-correlation-flags"
           onClick={onNavigateToInvestigation}
-          className="bg-surface-container border border-outline-variant rounded p-3 flex flex-col justify-between h-24 hover:border-tertiary transition-colors cursor-pointer group"
+          className="bg-surface-container border border-outline-variant rounded p-3 flex flex-col justify-between h-24 hover:border-tertiary active:border-tertiary active:scale-[0.99] transition-all cursor-pointer group"
           title="Click to view Active Correlation Investigation"
         >
           <div className="flex items-center justify-between text-on-surface-variant">
@@ -286,7 +286,7 @@ export const LiveAlertsView: React.FC<LiveAlertsViewProps> = ({
                         setSelectedAlertForDetail(alert);
                       }
                     }}
-                    className="hover:bg-surface-variant transition-colors group relative cursor-pointer"
+                    className="hover:bg-surface-variant active:bg-surface-variant transition-colors group relative cursor-pointer"
                   >
                     {/* Severity Dot */}
                     <td className="px-4 py-2 align-middle">
